@@ -148,6 +148,6 @@ def get_term_info():
 
     There are no arguments.
     """
-    with open("../public/latestTerm.json") as f:
+    with open("../public/latestTerm.json", encoding="utf-8") as f:
         term_info = json.load(f)
     return term_info
